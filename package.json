@@ -1,0 +1,17 @@
+{
+  "name": "jest-coverage-typeerror",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "jest-coverage-typeerror": "./bin/run.sh"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
