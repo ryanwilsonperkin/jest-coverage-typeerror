@@ -63,6 +63,26 @@ Time:        0.099 s, estimated 1 s
 Ran all test suites.
 ```
 
+And most interestingly, if we specify that we only want to collect coverage from the test file (such that the main.js isn't modified), then it passes:
+
+```sh
+jest --coverage --collectCoverageFrom test.js
+
+ PASS  ./test.js
+  ✓ should throw a TypeError (3 ms)
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------|---------|----------|---------|---------|-------------------
+All files |       0 |        0 |       0 |       0 |
+----------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        0.201 s, estimated 1 s
+Ran all test suites.
+```
+
 This can be tested without cloning by running
 ```sh
 npx github:ryanwilsonperkin/jest-coverage-typeerror
